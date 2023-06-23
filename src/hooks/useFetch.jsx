@@ -17,14 +17,27 @@ export const useFetch = () => {
   //     }
   //   };
 
-  const request = async () => {
-    await axios.get("http://localhost:5000/posts").then((response) => setData(response.data));
+  const get = async () => {
+    await axios
+      .get("http://localhost:5000/posts")
+      .then((response) => setData(response.data))
+      .catch((err) => console.log(err));
     setCountId(data.length);
   };
 
   const post = async (newObj) => {
-    await axios.post("http://localhost:5000/posts", newObj);
+    await axios
+      .post("http://localhost:5000/posts", newObj)
+      .then((response) => console.log(response.data))
+      .catch((err) => console.log(err));
   };
 
-  return { data, countId, request, post };
+  const put = async (newObj, id) => {
+    await axios
+      .put(`http://localhost:5000/posts/${id}`, newObj)
+      .then((response) => console.log(response.data))
+      .catch((err) => console.log(err));
+  };
+
+  return { data, countId, get, post, put };
 };

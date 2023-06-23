@@ -1,11 +1,13 @@
 import React from "react";
 import { useFetch } from "../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
 
 export const Data = () => {
-  const { request, data } = useFetch();
+  const { get, data } = useFetch();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
-    request();
+    get();
   }, []);
 
   return (
@@ -18,6 +20,8 @@ export const Data = () => {
               <div>
                 <p>{element.text}</p>
               </div>
+              <button>Deletar</button>
+              <button onClick={() => navigate(`/updateData/${element.id}`)}>Edit</button>
             </div>
           ))}
         </>

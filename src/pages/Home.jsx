@@ -1,15 +1,17 @@
 import React from "react";
 import { useFetch } from "../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-  const { request, data, countId, post } = useFetch();
+  const { get, data, countId, post } = useFetch();
   const [text, setText] = React.useState();
   const [title, setTitle] = React.useState();
   const [updatePage, setUpdatePage] = React.useState(false);
   const [addId, setAddId] = React.useState(countId);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
-    request();
+    get();
   }, [updatePage]);
 
   const handleCreatePost = () => {
@@ -33,6 +35,7 @@ export const Home = () => {
             <label htmlFor="post">Texto</label>
             <textarea name="" id="post" cols="30" rows="10" placeholder="Digite o texto..." onChange={(event) => setText(event.target.value)}></textarea>
             <button onClick={() => handleCreatePost()}>Postar</button>
+            <button onClick={() => navigate("/data")}>Visualizar Posts</button>
           </section>
           <section>
             {data.map((element) => (
