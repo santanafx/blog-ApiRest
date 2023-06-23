@@ -3,25 +3,29 @@ import { useFetch } from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-  const { get, data, countId, post } = useFetch();
+  const { getRequest, postRequest } = useFetch();
+  const [data, setData] = React.useState([]);
+  const [count, setCount] = React.useState();
   const [text, setText] = React.useState();
   const [title, setTitle] = React.useState();
   const [updatePage, setUpdatePage] = React.useState(false);
-  const [addId, setAddId] = React.useState(countId);
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    get();
+    getRequest().then((dataFromRequest) => {
+      setData(dataFromRequest);
+      setCount(data.length);
+    });
   }, [updatePage]);
 
   const handleCreatePost = () => {
-    setAddId(addId + 1);
+    setCount(() => count + 1);
     let createPost = {
-      id: addId,
+      id: count,
       title: title,
       text: text,
     };
-    post(createPost);
+    postRequest(createPost);
     setUpdatePage(!updatePage);
   };
 

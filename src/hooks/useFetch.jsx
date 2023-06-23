@@ -1,9 +1,8 @@
-import React from "react";
 import axios from "axios";
 
 export const useFetch = () => {
-  const [data, setData] = React.useState([]);
-  const [countId, setCountId] = React.useState();
+  // const [data, setData] = React.useState([]);
+  // const [countId, setCountId] = React.useState();
   //   const [error, setError] = React.useState();
 
   //   const request = async (url, options) => {
@@ -17,27 +16,22 @@ export const useFetch = () => {
   //     }
   //   };
 
-  const get = async () => {
-    await axios
-      .get("http://localhost:5000/posts")
-      .then((response) => setData(response.data))
-      .catch((err) => console.log(err));
-    setCountId(data.length);
+  const getRequest = async () => {
+    const response = await axios.get("http://localhost:5000/posts");
+    return response.data;
   };
 
-  const post = async (newObj) => {
-    await axios
-      .post("http://localhost:5000/posts", newObj)
-      .then((response) => console.log(response.data))
-      .catch((err) => console.log(err));
+  const postRequest = async (newObj) => {
+    await axios.post("http://localhost:5000/posts", newObj).catch((err) => console.log(err));
   };
 
-  const put = async (newObj, id) => {
-    await axios
-      .put(`http://localhost:5000/posts/${id}`, newObj)
-      .then((response) => console.log(response.data))
-      .catch((err) => console.log(err));
+  const putRequest = async (newObj, id) => {
+    await axios.put(`http://localhost:5000/posts/${id}`, newObj).catch((err) => console.log(err));
   };
 
-  return { data, countId, get, post, put };
+  const deleteRequest = async (id) => {
+    await axios.delete(`http://localhost:5000/posts/${id}`).catch((err) => console.log(err));
+  };
+
+  return { postRequest, putRequest, getRequest, deleteRequest };
 };

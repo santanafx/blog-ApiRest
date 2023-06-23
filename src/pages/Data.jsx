@@ -3,12 +3,21 @@ import { useFetch } from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 
 export const Data = () => {
-  const { get, data } = useFetch();
+  const { getRequest, deleteRequest } = useFetch();
+  const [data, setData] = React.useState([]);
+  const [updatePage, setUpdatePage] = React.useState(false);
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    get();
-  }, []);
+    getRequest().then((dataFromRequest) => {
+      setData(dataFromRequest);
+    });
+  }, [updatePage]);
+
+  const handleDelete = (id) => {
+    deleteRequest(id);
+    setUpdatePage(!updatePage);
+  };
 
   return (
     <section>
@@ -20,7 +29,7 @@ export const Data = () => {
               <div>
                 <p>{element.text}</p>
               </div>
-              <button>Deletar</button>
+              <button onClick={() => handleDelete(element.id)}>Deletar</button>
               <button onClick={() => navigate(`/updateData/${element.id}`)}>Edit</button>
             </div>
           ))}
