@@ -17,20 +17,20 @@ export const useFetch = () => {
   //   };
 
   const getRequest = async () => {
-    const response = await axios.get("http://localhost:5000/posts");
+    const response = await axios.get("https://json-server-formulario-api-rest.vercel.app/posts");
     return response.data;
   };
 
   const postRequest = async (newObj) => {
-    await axios.post("http://localhost:5000/posts", newObj).catch((err) => console.log(err));
+    await axios.post("https://json-server-formulario-api-rest.vercel.app/posts", newObj).catch((err) => console.log(err));
   };
 
   const putRequest = async (newObj, id) => {
-    await axios.put(`http://localhost:5000/posts/${id}`, newObj).catch((err) => console.log(err));
+    await axios.put(`https://json-server-formulario-api-rest.vercel.app/posts/${id}`, newObj).catch((err) => console.log(err));
   };
 
   const deleteRequest = async (id) => {
-    await axios.delete(`http://localhost:5000/posts/${id}`).catch((err) => console.log(err));
+    await axios.delete(`https://json-server-formulario-api-rest.vercel.app/posts/${id}`).catch((err) => console.log(err));
   };
 
   return { postRequest, putRequest, getRequest, deleteRequest };
