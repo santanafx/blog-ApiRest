@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/posts/:path*",
-      "destination": "https://json-server-formulario-api-rest.vercel.app/posts/:path*"
+      "destination": "http://localhost:5000/posts/:path*"
     }
   ]
 }
