@@ -29,14 +29,14 @@ export const UpdateData = () => {
   };
 
   return (
-    <section>
+    <section  className="mt-5 max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
       {newTitle !== undefined ? (
         <div>
           <label htmlFor="title">Título</label>
-          <input type="text" id="title" value={newTitle} onChange={(event) => setNewTitle(event.target.value)} />
+          <input className="w-full mt-2 mb-3 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" type="text" id="title" value={newTitle} onChange={(event) => setNewTitle(event.target.value)} />
           <label htmlFor="post">Texto</label>
-          <textarea name="" id="post" cols="30" rows="10" value={newText} onChange={(event) => setNewText(event.target.value)}></textarea>
-          <button onClick={() => handleUpdate()}>Atualizar</button>
+          <textarea className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg" name="" id="post" cols="30" rows="10" value={newText} onChange={(event) => setNewText(event.target.value)}></textarea>
+          <button className="mt-3 mr-3 px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"  onClick={() => handleUpdate()}>Atualizar</button>
         </div>
       ) : (
         "Loading..."
