@@ -1,7 +1,8 @@
-import React from "react";
-import { AiOutlineMail, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineUser, AiFillPlusCircle } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <header className="bg-black w-full ">
       <div className="text-white w-11/12 my-0 mx-auto flex p-3">
@@ -11,22 +12,32 @@ export const NavBar = () => {
           </a>
         </div>
         <div className="w-2/4 flex justify-end">
-          <div className="flex items-center text-xl border-1 border-white px-3 py-1 rounded-full mr-10 cursor-pointer hover:text-black hover:bg-white">
+          <div className="flex items-center text-xl border-1 border-white px-3 py-1 rounded-full mr-5 cursor-pointer hover:text-black hover:bg-white">
             <a href="/#" className="mr-2">
               Newsletter
             </a>
             <AiOutlineMail size="20" />
           </div>
-          <div className="flex items-center cursor-pointer">
-            <AiOutlineSearch size="30" />
+          <div className="flex items-center mr-5">
+            <span className="flex items-center ">
+              <AiOutlineUser className="cursor-pointer mx-1 " size="30" />
+              Bem vindo, Usuário
+            </span>
+          </div>
+          <div className="flex items-center mr-5 cursor-pointer hover:opacity-70">
+            <AiFillPlusCircle className="mx-1 text-indigo-600" size="30" />
+            Postar
           </div>
         </div>
       </div>
 
       <div className="flex items-center justify-center text-white w-11/12 my-0 mx-auto flex p-3">
-        <h1 className="mx-2 cursor-pointer flex items-center hover:opacity-50">
+        <a
+          href="/"
+          className="mx-2 cursor-pointer flex items-center hover:opacity-70 text-indigo-600"
+        >
           Blog
-        </h1>
+        </a>
         <span className="mx-2 select-none text-xl">|</span>
         <a className="mx-2 flex items-center hover:opacity-70" href="/#">
           Gestão por Processos

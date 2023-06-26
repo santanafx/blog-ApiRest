@@ -4,13 +4,15 @@ import { Data } from "./pages/Data";
 import { UpdateData } from "./pages/UpdateData";
 import { Test } from "./pages/Test";
 import { NavBar } from "./components/NavBar";
+import { Postar } from "./pages/Postar";
 
 function App() {
   return (
     <BrowserRouter>
-    <NavBar/>
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/postar" element={<Postar />} />
         <Route path="/data" element={<Data />} />
         <Route path="/test" element={<Test />} />
         <Route path="/updateData/:id" element={<UpdateData />} />
