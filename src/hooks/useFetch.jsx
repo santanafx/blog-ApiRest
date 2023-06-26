@@ -22,15 +22,21 @@ export const useFetch = () => {
   };
 
   const postRequest = async (newObj) => {
-    await axios.post("http://localhost:5000/posts", newObj).catch((err) => console.log(err));
+    await axios
+      .post("http://localhost:5000/posts", newObj)
+      .catch((err) => console.log(err.response.data));
   };
 
   const putRequest = async (newObj, id) => {
-    await axios.put(`http://localhost:5000/posts/${id}`, newObj).catch((err) => console.log(err));
+    await axios
+      .put(`http://localhost:5000/posts/${id}`, newObj)
+      .catch((err) => console.log(err.response.data));
   };
 
   const deleteRequest = async (id) => {
-    await axios.delete(`http://localhost:5000/posts/${id}`).catch((err) => console.log(err));
+    await axios
+      .delete(`http://localhost:5000/posts/${id}`)
+      .catch((err) => console.log(err.response.data));
   };
 
   return { postRequest, putRequest, getRequest, deleteRequest };

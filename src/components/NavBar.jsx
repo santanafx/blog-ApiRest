@@ -24,14 +24,17 @@ export const NavBar = () => {
               Bem vindo, Usuário
             </span>
           </div>
-          <div className="flex items-center mr-5 cursor-pointer hover:opacity-70">
+          <div
+            className="flex items-center mr-5 cursor-pointer hover:opacity-70"
+            onClick={() => navigate("/postar")}
+          >
             <AiFillPlusCircle className="mx-1 text-indigo-600" size="30" />
             Postar
           </div>
         </div>
       </div>
 
-      <div className="flex items-center justify-center text-white w-11/12 my-0 mx-auto flex p-3">
+      <div className="flex items-center justify-center text-white w-11/12 my-0 mx-auto p-3">
         <a
           href="/"
           className="mx-2 cursor-pointer flex items-center hover:opacity-70 text-indigo-600"

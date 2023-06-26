@@ -2,33 +2,24 @@
   "posts": [
     {
       "id": 1,
-      "title": "Novo textotestetestetestetestetestetestetestetesteteste",
-      "text": "Novo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textoNovo textotestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
+      "image": "/images/gestao.jpg",
+      "category": "Gestão por Processos",
+      "title": "dsadsadsa",
+      "text": "dsadsasd asdsadsad"
     },
     {
-      "id": 2,
-      "title": "testetestetestetestetestetestetestetestetesteteste",
-      "text": "testetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
+      "image": "/images/inovacao.png",
+      "category": "Inovação e Tecnologia",
+      "title": "tretretertre",
+      "text": "tretretre",
+      "id": 2
     },
     {
       "id": 3,
-      "title": "testetestetestetestetestetestetestetestetesteteste",
-      "text": "testetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
-    },
-    {
-      "id": 4,
-      "title": "testetestetestetestetestetestetestetestetesteteste",
-      "text": "testetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
-    },
-    {
-      "id": 5,
-      "title": "testetestetestetestetestetestetestetestetesteteste",
-      "text": "testetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
-    },
-    {
-      "id": 6,
-      "title": "testetestetestetestetestetestetestetestetesteteste",
-      "text": "testetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetestetesteteste"
+      "image": "/images/transformacao.jpg",
+      "category": "Transformação Digital",
+      "title": "tretretertre",
+      "text": "tretretre"
     }
   ]
 }

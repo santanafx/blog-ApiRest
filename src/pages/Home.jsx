@@ -17,7 +17,13 @@ export const Home = () => {
       {data !== undefined ? (
         <section className="flex justify-center flex-wrap gap-10 max-w-7xl">
           {data.map((element) => (
-            <Card key={element.id} title={element.title} text={element.text} />
+            <Card
+              key={element.id}
+              title={element.title}
+              text={element.text}
+              image={element.image}
+              category={element.category}
+            />
           ))}
         </section>
       ) : (
