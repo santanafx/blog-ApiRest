@@ -3,10 +3,12 @@ import { Home } from "./pages/Home";
 import { Data } from "./pages/Data";
 import { UpdateData } from "./pages/UpdateData";
 import { Test } from "./pages/Test";
+import { NavBar } from "./components/NavBar";
 
 function App() {
   return (
     <BrowserRouter>
+    <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/data" element={<Data />} />
