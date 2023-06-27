@@ -11,7 +11,7 @@ Fora dos objetivos principais, foi desenvolvido um custom hook para efetuar requ
 
 ## Video do projeto
 
-<a href="https://youtu.be/YqwZobeCnpc">Video do projeto aqui</a>.
+<a href="https://youtu.be/_T7MMczzljc">Video do projeto aqui</a>.
 
 ## Linguagens utilizadas
 
