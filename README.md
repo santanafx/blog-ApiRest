@@ -3,7 +3,7 @@
 <p align="justify">
 O projeto tinha como objetivo aprender e utilizar uma API REST, utilizando todos os tipos de requisições (GET, PUT, POST e DELETE), além de aprender a utilizar o Tailwind CSS para construir a parte estética da página. Foi criado um blog onde o administrador pode clicar no botão "Postar" no canto superior direito para criar um novo post (requisição POST), visualizar todos os posts (requisição GET), deletar um post específico (requisição DELETE) e editar um post (requisição PUT).
 
-Além dos objetivos principais, também foi desenvolvido um custom hook para realizar requisições na API, que foi criada utilizando o pacote json-server. Isso possibilitou simular toda a parte do backend de uma API REST. A página também foi projetada de forma responsiva utilizando o Tailwind CSS, e foi adicionada a funcionalidade de filtrar os posts por categoria no menu de navegação da página.</p>
+Fora dos objetivos principais, foi desenvolvido um custom hook para efetuar requisições na API, a qual foi criada utilizando o pacote json-server. Isso permitiu simular completamente a funcionalidade de backend de uma API REST. A página foi projetada com responsividade, utilizando o Tailwind CSS. Foi adicionada a funcionalidade de filtrar os posts por categoria no menu de navegação da página. Além disso, o Vite foi escolhido como a ferramenta de desenvolvimento para este projeto, devido à sua eficiência e modernidade no contexto de desenvolvimento web.</p>
 
 ## Acesse
 

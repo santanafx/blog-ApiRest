@@ -20,6 +20,15 @@ export const Editar = () => {
     });
   }, []);
 
+  const handleGetDate = () => {
+    const calendario = new Date();
+    let calendarioDia = calendario.getDate();
+    let calendarioMes = calendario.getMonth() + 1;
+    let calendarioAno = calendario.getFullYear();
+
+    return `${calendarioDia}/${calendarioMes}/${calendarioAno}`;
+  };
+
   const handleUpdate = () => {
     let image = "";
     let editPost = "";
@@ -42,6 +51,7 @@ export const Editar = () => {
       category: select,
       title: newTitle,
       text: newText,
+      date: handleGetDate(),
     };
 
     putRequest(editPost, params.id);
