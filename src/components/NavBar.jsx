@@ -1,5 +1,5 @@
 import { AiOutlineMail, AiOutlineUser, AiFillPlusCircle } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const navigate = useNavigate();
@@ -35,22 +35,28 @@ export const NavBar = () => {
       </div>
 
       <div className="flex items-center justify-center text-white w-11/12 my-0 mx-auto p-3">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="mx-2 cursor-pointer flex items-center hover:opacity-70 text-indigo-600"
         >
           Blog
-        </a>
+        </Link>
         <span className="mx-2 select-none text-xl">|</span>
-        <a className="mx-2 flex items-center hover:opacity-70" href="/#">
+        <Link to="/gestao" className="mx-2 flex items-center hover:opacity-70">
           Gestão por Processos
-        </a>
-        <a className="mx-2 flex items-center hover:opacity-70" href="/#">
+        </Link>
+        <Link
+          to="/inovacao"
+          className="mx-2 flex items-center hover:opacity-70"
+        >
           Inovação e Tecnologia
-        </a>
-        <a className="mx-2 flex items-center hover:opacity-70" href="/#">
+        </Link>
+        <Link
+          to="/transformacao"
+          className="mx-2 flex items-center hover:opacity-70"
+        >
           Transformação Digital
-        </a>
+        </Link>
       </div>
     </header>
   );

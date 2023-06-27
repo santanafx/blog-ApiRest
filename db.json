@@ -3,66 +3,42 @@
     {
       "image": "/images/gestao.jpg",
       "category": "Gestão por Processos",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023",
+      "title": "Gestão",
+      "text": "A gestão eficaz envolve liderança inspiradora, tomada de decisão estratégica e motivação da equipe, resultando em alto desempenho e sucesso organizacional.",
+      "date": "27/6/2023",
       "id": 1
     },
     {
       "id": 2,
-      "image": "/images/inovacao.png",
-      "category": "Inovação e Tecnologia",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
+      "image": "/images/gestao.jpg",
+      "category": "Gestão por Processos",
+      "title": "Gestão e Liderança",
+      "text": "A gestão eficiente requer habilidades de liderança, comunicação clara e tomada de decisão ágil para alcançar metas e otimizar recursos. O desenvolvimento de uma cultura colaborativa e o incentivo à inovação são fundamentais para o sucesso de uma equipe e da organização.",
+      "date": "27/6/2023"
     },
     {
       "id": 3,
-      "image": "/images/transformacao.jpg",
-      "category": "Transformação Digital",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
+      "image": "/images/inovacao.png",
+      "category": "Inovação e Tecnologia",
+      "title": "Tecnologia inova a cada dia mais.",
+      "text": "A inovação é a chave para impulsionar o progresso, rompendo barreiras e criando soluções criativas para desafios complexos. Ela inspira a transformação, estimula o crescimento e abre novas oportunidades para o futuro.",
+      "date": "27/6/2023"
     },
     {
       "id": 4,
       "image": "/images/transformacao.jpg",
       "category": "Transformação Digital",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
+      "title": "Tecnologia inova a cada dia mais.",
+      "text": "A transformação digital revoluciona a maneira como as empresas operam, integrando tecnologia avançada em todos os aspectos do negócio. Ela impulsiona a eficiência, aprimora a experiência do cliente e permite a adaptação ágil em um mundo cada vez mais digitalizado.",
+      "date": "27/6/2023"
     },
     {
       "id": 5,
-      "image": "/images/inovacao.png",
-      "category": "Inovação e Tecnologia",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
-    },
-    {
-      "id": 6,
-      "image": "/images/inovacao.png",
-      "category": "Inovação e Tecnologia",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
-    },
-    {
-      "id": 7,
-      "image": "/images/inovacao.png",
-      "category": "Inovação e Tecnologia",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
-    },
-    {
-      "id": 8,
-      "image": "/images/gestao.jpg",
-      "category": "Gestão por Processos",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit unde perspiciatis nam asperiores nemo quae eligendi, sint numquam inventore! Magni possimus ducimus ipsam blanditiis quisquam illo quas distinctio cumque!",
-      "date": "26/6/2023"
+      "image": "/images/transformacao.jpg",
+      "category": "Transformação Digital",
+      "title": "Tecnologia no seu dia a dia.",
+      "text": "A transformação digital redefine a forma como as organizações operam, incorporando tecnologias inovadoras para impulsionar a eficiência, a produtividade e a inovação. Ela promove a integração de dados, a automação de processos e a personalização da experiência do cliente, fortalecendo a competitividade e o crescimento sustentável.",
+      "date": "27/6/2023"
     }
   ]
 }

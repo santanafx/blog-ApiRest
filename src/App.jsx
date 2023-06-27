@@ -5,6 +5,9 @@ import { Postar } from "./pages/Postar";
 import { Atualizar } from "./pages/Atualizar";
 import { Editar } from "./pages/Editar";
 import { Footer } from "./components/Footer";
+import { Gestao } from "./pages/Gestao";
+import { Inovacao } from "./pages/Inovacao";
+import { Transformacao } from "./pages/Transformacao";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/postar" element={<Postar />} />
         <Route path="/atualizar" element={<Atualizar />} />
+        <Route path="/gestao" element={<Gestao />} />
+        <Route path="/inovacao" element={<Inovacao />} />
+        <Route path="/transformacao" element={<Transformacao />} />
         <Route path="/editar/:id" element={<Editar />} />
       </Routes>
       <Footer />
