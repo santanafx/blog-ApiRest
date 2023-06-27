@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
     <footer className="bg-black w-full sticky top-[100%]">
-      <div className="w-[90%] h-[300px] mx-auto flex justify-center">
+      <div className="w-[90%] min-h-[300px] mx-auto flex justify-center flex-wrap">
         <div className="mt-10 mx-5">
           <h1 className="text-4xl text-white select-none">Infos</h1>
         </div>
@@ -47,7 +47,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="w-[90%] py-5 mx-auto flex justify-end">
-        <div>
+        <div className="flex flex-wrap">
           <span className="mx-3 hover:text-white hover:opacity-50 cursor-pointer">
             Política de privacidade
           </span>

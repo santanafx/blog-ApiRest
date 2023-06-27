@@ -11,8 +11,8 @@ export const NavBar = () => {
             Infos
           </a>
         </div>
-        <div className="w-2/4 flex justify-end">
-          <div className="flex items-center text-xl border-1 border-white px-3 py-1 rounded-full mr-5 cursor-pointer hover:text-black hover:bg-white">
+        <div className="w-2/4 flex flex-col justify-end gap-2 lg:flex-row">
+          <div className="flex items-center text-xl border-1 border-white px-3 py-1 rounded-full mr-5 cursor-pointer hover:text-black hover:bg-white max-w-[160px]">
             <a href="/#" className="mr-2">
               Newsletter
             </a>
