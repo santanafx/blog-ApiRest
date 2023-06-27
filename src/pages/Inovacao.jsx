@@ -23,10 +23,10 @@ export const Inovacao = () => {
             <Card
               key={element.id + index}
               title={element.title}
-              text={element.text}
               image={element.image}
               category={element.category}
               date={element.date}
+              id={element.id}
             />
           ))}
         </section>
