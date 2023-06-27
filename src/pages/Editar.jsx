@@ -49,7 +49,7 @@ export const Editar = () => {
   };
 
   return (
-    <section className="mt-5 max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8  flex flex-col">
+    <section className="mt-5 max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8  flex flex-col min-h-[60vh]">
       {newTitle !== undefined ? (
         <>
           <label htmlFor="title" className="text-xl font-bold">
@@ -90,12 +90,14 @@ export const Editar = () => {
             value={newText}
             onChange={(event) => setNewText(event.target.value)}
           ></textarea>
-          <button
-            className="mt-3 mr-3 px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-            onClick={() => handleUpdate()}
-          >
-            Atualizar
-          </button>
+          <div className="flex justify-center">
+            <button
+              className="mt-3 mr-3 px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150 w-[200px]"
+              onClick={() => handleUpdate()}
+            >
+              Atualizar
+            </button>
+          </div>
         </>
       ) : (
         "Loading..."

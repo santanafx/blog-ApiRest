@@ -39,6 +39,14 @@
       "title": "Tecnologia no seu dia a dia.",
       "text": "A transformação digital redefine a forma como as organizações operam, incorporando tecnologias inovadoras para impulsionar a eficiência, a produtividade e a inovação. Ela promove a integração de dados, a automação de processos e a personalização da experiência do cliente, fortalecendo a competitividade e o crescimento sustentável.",
       "date": "27/6/2023"
+    },
+    {
+      "image": "/images/gestao.jpg",
+      "category": "Gestão por Processos",
+      "title": "Gestão de projetos Teste",
+      "text": "Gestão de projetos Teste Gestão de projetos Teste Gestão de projetos Teste Gestão de projetos Teste Gestão de projetos Teste Gestão de projetos Teste Gestão de projetos Teste",
+      "date": "27/6/2023",
+      "id": 6
     }
   ]
 }
