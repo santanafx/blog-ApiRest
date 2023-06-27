@@ -18,6 +18,15 @@ export const Postar = () => {
     });
   }, [updatePage]);
 
+  const handleGetDate = () => {
+    const calendario = new Date();
+    let calendarioDia = calendario.getDate();
+    let calendarioMes = calendario.getMonth() + 1;
+    let calendarioAno = calendario.getFullYear();
+
+    return `${calendarioDia}/${calendarioMes}/${calendarioAno}`;
+  };
+
   const handleCreatePost = () => {
     setCount(data.length);
     setCount(() => count + 1);
@@ -41,23 +50,24 @@ export const Postar = () => {
       category: select,
       title: title,
       text: text,
+      date: handleGetDate(),
     };
     postRequest(createPost);
     setUpdatePage(!updatePage);
   };
 
   return (
-    <main>
+    <main className=" min-h-[85vh]">
       {data !== undefined ? (
         <>
-          <section className="mt-5 max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8 flex flex-col">
+          <section className="mt-5 max-w-7xl mx-auto text-gray-600 flex flex-col ">
             <label htmlFor="title">Título:</label>
             <input
               type="text"
               id="title"
               placeholder="Digite o título..."
               required
-              className="w-[300px] mt-2 mb-3 px-3 py-2 text-gray-500  outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-[300px] mt-2 mb-3 px-3 py-2 text-gray-500 outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
               onChange={(event) => setTitle(event.target.value)}
             />
             <label htmlFor="select">Categoria:</label>
@@ -68,7 +78,7 @@ export const Postar = () => {
               required
               value={select}
               id="select"
-              className=" w-[300px] mt-2 mb-3 px-3 py-2 text-gray-500  outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className=" w-[300px] mt-2 mb-3 px-3 py-2 text-gray-500 outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
             >
               <option>Selecione uma opção</option>
               <option>Gestão por Processos</option>
@@ -77,7 +87,7 @@ export const Postar = () => {
             </select>
             <label htmlFor="post">Texto:</label>
             <textarea
-              className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none  outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
               onChange={(event) => setText(event.target.value)}
             ></textarea>
             <div className="flex justify-center items-center mt-10">
@@ -89,7 +99,7 @@ export const Postar = () => {
               </button>
               <button
                 className="w-[300px] mr-3 px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-                onClick={() => navigate("/data")}
+                onClick={() => navigate("/atualizar")}
               >
                 Visualizar Posts
               </button>

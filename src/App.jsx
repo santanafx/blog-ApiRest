@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
-import { Data } from "./pages/Data";
-import { UpdateData } from "./pages/UpdateData";
-import { Test } from "./pages/Test";
 import { NavBar } from "./components/NavBar";
 import { Postar } from "./pages/Postar";
+import { Atualizar } from "./pages/Atualizar";
+import { Editar } from "./pages/Editar";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/postar" element={<Postar />} />
-        <Route path="/data" element={<Data />} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/updateData/:id" element={<UpdateData />} />
+        <Route path="/atualizar" element={<Atualizar />} />
+        <Route path="/editar/:id" element={<Editar />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
