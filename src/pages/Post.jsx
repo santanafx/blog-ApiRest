@@ -27,8 +27,8 @@ export const Post = () => {
   return (
     <section className="w-[95%] my-0 mx-auto">
       {data !== undefined ? (
-        <div className="flex gap-5">
-          <div className="w-[50%] mt-10">
+        <div className="flex gap-5 max-[1100px]:flex-col max-[1100px]:items-center">
+          <div className="w-[50%] mt-10 max-[1100px]:w-[100%]">
             <span className="bg-[#dce2e9] text-[#5d6268] font-semibold px-3 rounded-xl">
               Exclusive Content
             </span>
@@ -43,14 +43,14 @@ export const Post = () => {
               <AiOutlineDownload />
             </button>
           </div>
-          <div className="w-[50%]">
+          <div className="w-[50%] max-[1100px]:w-[100%]">
             <img src={data.image} alt="" />
           </div>
         </div>
       ) : (
         "Loading..."
       )}
-      <div className="w-[45%] mx-auto my-20">
+      <div className="w-[45%] mx-auto my-20 max-[1100px]:w-[80%]">
         <p className="text-justify">
           Unlike traditional solutions that make customer contact a costly task,
           CRM is{" "}
