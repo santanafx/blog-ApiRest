@@ -5,10 +5,6 @@ O projeto tinha como objetivo aprender e utilizar uma API REST, utilizando todos
 
 Fora dos objetivos principais, foi desenvolvido um custom hook para efetuar requisições na API, a qual foi criada utilizando o pacote json-server. Isso permitiu simular completamente a funcionalidade de backend de uma API REST. A página foi projetada com responsividade, utilizando o Tailwind CSS. Foi adicionada a funcionalidade de filtrar os posts por categoria no menu de navegação da página. Além disso, o Vite foi escolhido como a ferramenta de desenvolvimento para este projeto, devido à sua eficiência e modernidade no contexto de desenvolvimento web.</p>
 
-## Acesse
-
-<a href="https://blog-api-rest.vercel.app/">Acesse a aplicação clicando aqui</a>.
-
 ## Video do projeto
 
 <a href="https://youtu.be/_T7MMczzljc">Video do projeto aqui</a>.
